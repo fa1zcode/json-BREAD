@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>BREAD(Browse, Read, Edit, Add, Delete)</h1>
+    <h2>Filters
+        <form action="/add" method="post">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+            <label for="string">String</label>
+            <input type="text" id="string" name="string">
+            <label for="integer">Integer</label>
+            <input type="text" id="integer" name="integer">
+            <label for="float">Float</label>
+            <input type="text" id="float" name="float">
+            <label for="date">Date</label>
+            <input type="text" id="date" name="date">
+            <label for="boolean">Boolean</label>
+            <input type="text" id="boolean" name="boolean">
+            <button type="submit">Search</button>
+    </h2>
+    </form>
+    <h3>To Do</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>String</th>
+                <th>Integer</th>
+                <th>Float</th>
+                <th>Date</th>
+                <th>Boolean</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach((item, index)=> { %>
+                <tr>
+                    <td>
+                        <%= index + 1 %>
+                    </td>
+                    <td>
+                        <%= item.string %>
+                    </td>
+                    <td>
+                        <%= item.integer %>
+                    </td>
+                    <td>
+                        <%= item.float %>
+                    </td>
+                    <td>
+                        <%= item.date %>
+                    </td>
+                    <td>
+                        <%= item.boolean %>
+                    </td>
+                    <td>
+                        <a href="/edit/<%= index%>">Edit</a>
+                        <a href="/delete/<%= index%>">Delete</a>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+    <a href="/add">Add</a>
+</body>
+
+</html>

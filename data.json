@@ -1,0 +1,39 @@
+[
+   {
+      "string": "Testing Data",
+      "integer": "12",
+      "float": "1.45",
+      "date": "2017-12-12",
+      "boolean": false
+   },
+   {
+      "string": "Data Lagi",
+      "integer": "99",
+      "float": "100.405",
+      "date": "12017-02-01",
+      "boolean": false
+   },
+   {
+      "string": "sql",
+      "integer": "55",
+      "float": "558.225",
+      "date": "2021-12-02",
+      "boolean": false,
+      "task": "",
+      "complete": true
+   },
+   {
+      "string": "xx",
+      "integer": "1",
+      "float": "0.005",
+      "date": "2022-02-07",
+      "boolean": "true"
+   },
+   {
+      "string": "aa",
+      "integer": "55",
+      "float": "4534.775",
+      "date": "2021-12-08",
+      "boolean": "true"
+   }
+]
