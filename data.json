@@ -4,36 +4,41 @@
       "integer": "12",
       "float": "1.45",
       "date": "2017-12-12",
-      "boolean": false
+      "boolean": true
    },
    {
-      "string": "Data Lagi",
+      "string": "Coba Lagi",
       "integer": "99",
       "float": "100.405",
       "date": "12017-02-01",
+      "boolean": true
+   },
+   {
+      "string": "Data Lagi",
+      "integer": "44",
+      "float": "44.888",
+      "date": "2022-02-09",
       "boolean": false
    },
    {
-      "string": "sql",
-      "integer": "55",
-      "float": "558.225",
-      "date": "2021-12-02",
-      "boolean": false,
-      "task": "",
-      "complete": true
+      "string": "Super Sekali",
+      "integer": "0",
+      "float": "1.45",
+      "date": "",
+      "boolean": true
    },
    {
-      "string": "xx",
-      "integer": "1",
-      "float": "0.005",
-      "date": "2022-02-07",
-      "boolean": "true"
+      "string": "queue",
+      "integer": "22",
+      "float": "222.142",
+      "date": "2022-02-06",
+      "boolean": true
    },
    {
-      "string": "aa",
-      "integer": "55",
-      "float": "4534.775",
-      "date": "2021-12-08",
-      "boolean": "true"
+      "string": "Data Lagi lagi",
+      "integer": "111",
+      "float": "11.889",
+      "date": "2022-02-01",
+      "boolean": true
    }
 ]

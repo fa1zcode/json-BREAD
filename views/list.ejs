@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+ 
 </head>
 
 <body>
@@ -28,7 +31,7 @@
     </h2>
     </form>
     <h3>To Do</h3>
-    <table border="1">
+    <table class="content-table">
         <thead>
             <tr>
                 <th>ID</th>
@@ -55,19 +58,36 @@
                         <%= item.float %>
                     </td>
                     <td>
-                        <%= item.date %>
+                        <%= item.date ? item.date : 'kosong' %>
                     </td>
                     <td>
                         <%= item.boolean %>
                     </td>
                     <td>
-                        <a href="/edit/<%= index%>">Edit</a>
-                        <a href="/delete/<%= index%>">Delete</a>
+                        <a href="/edit/<%= index%>" class="btn" style="background-color: #04aa6d;">Edit</a>
+                        <a href="/delete/<%= index%>" class="btn" style="background-color: #f44336;">Delete</a>
                     </td>
                 </tr>
                 <% }) %>
         </tbody>
     </table>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     <a href="/add">Add</a>
 </body>
 
