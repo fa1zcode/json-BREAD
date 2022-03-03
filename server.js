@@ -59,7 +59,7 @@ app.get('/delete/:id', function(req, res){
 
 app.get('/edit/:id', function(req,res){
     const id = req.params.id
-    //console.log(data[id])
+    // console.log(data[id])
     res.render('edit', {data: data[id]})
 })
 
@@ -70,6 +70,7 @@ app.post('/edit/:id', function(req, res){
     data[id].float = req.body.float
     data[id].date = req.body.date
     data[id].boolean = JSON.parse(req.body.boolean)
+    
     //data[id].complete = JSON.parse(req.body.complete)
     fs.writeFileSync('data.json', JSON.stringify(data, null, 3), 'utf-8')
     res.redirect('/')

@@ -7,31 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
  
 </head>
 
 <body>
     <h1>BREAD(Browse, Read, Edit, Add, Delete)</h1>
     <h2>Filters
-        <form action="/add" method="post">
-            <label for="id">ID</label>
-            <input type="text" id="id" name="id">
-            <label for="string">String</label>
-            <input type="text" id="string" name="string">
-            <label for="integer">Integer</label>
-            <input type="text" id="integer" name="integer">
-            <label for="float">Float</label>
-            <input type="text" id="float" name="float">
-            <label for="date">Date</label>
-            <input type="text" id="date" name="date">
-            <label for="boolean">Boolean</label>
-            <input type="text" id="boolean" name="boolean">
+        <form action="/search" method="post" class="form">
+        <div class="card-body">
+            <div>
+                <label for="id">ID</label>
+                <div>
+                    <input type="text" id="id" name="id">
+                </div>
+            </div>
+
+            <div>
+                <label for="string">String</label>
+                <div>
+                    <input type="text" id="string" name="string">
+                </div>
+            </div>
+            
+            <div>
+                <label for="integer">Integer</label>
+                <div>
+                    <input type="text" id="integer" name="integer">
+                </div>
+            </div>
+            
+            <div>
+                <label for="float">Float</label>
+                <div><input type="text" id="float" name="float"></div>
+            </div>
+            
+            <div>
+                <label for="date">Date</label>
+                <div>
+                    <input type="text" id="date" name="date">
+                </div>
+            </div>
+            
+            <div>
+                <label for="boolean">Boolean</label>
+                <div>
+                    <input type="text" id="boolean" name="boolean">
+                </div>
+            </div>
             <button type="submit">Search</button>
+        </div>
     </h2>
     </form>
     <h3>To Do</h3>
-    <table class="content-table">
+    <div  class="content-table">
+    <table>
         <thead>
             <tr>
                 <th>ID</th>
@@ -40,6 +70,7 @@
                 <th>Float</th>
                 <th>Date</th>
                 <th>Boolean</th>
+                <th>Activities</th>
             </tr>
         </thead>
         <tbody>
@@ -71,24 +102,10 @@
                 <% }) %>
         </tbody>
     </table>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    <a href="/add">Add</a>
+    </div>
+    <h3>
+    <a href="/add" class="btn" style="background-color: #0000FF;">Add</a>
+</h3>
 </body>
 
 </html>

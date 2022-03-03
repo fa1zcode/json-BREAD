@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css" type="text/css">
-    
-</head>
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+  </head>
 
-<body>
-    <h1>Add Data</h1>
-    <form action="/add" method="post">
-        <label for="string">String</label>
-        <input type="text" id="string" name="string">
-        <label for="integer">Integer</label>
-        <input type="number" id="integer" name="integer">
-        <label for="float">Float</label>
-        <input type="number" step="0.001" id="float" name="float">
-        <label for="date">Date</label>
-        <input type="date" id="date" name="date">
-        <label for="boolean">Boolean</label>
-        <select name="boolean" id="">
+  <body>
+    <h2>Add Data
+    <form action="/add" method="post" class="form">
+
+      <div>
+        <div>
+          <label for="string">String</label>
+          <div>
+            <input type="text" id="string" name="string" />
+          </div>
+        </div>
+
+        <div>
+          <label for="integer">Integer</label>
+          <div>
+            <input type="number" id="integer" name="integer" />
+          </div>
+        </div>
+
+        <div>
+          <label for="float">Float</label>
+          <div>
+            <input type="number" step="0.001" id="float" name="float" />
+          </div>
+        </div>
+
+        <div>
+          <label for="date">Date</label>
+          <div>
+            <input type="date" id="date" name="date" />
+          </div>
+        </div>
+
+        <div>
+            <label for="boolean">Boolean</label>
+            <div>
+                <select name="boolean" id="">
+            </div>
+        </div>
+
+        <div>
             <option value="false">false</option>
             <option value="true">true</option>
-        </select>
-        <button type="submit">Save</button>
+            <div>
+             </select>
+              <button type="submit">Save</button>
+            </div>
+        </div>
+      </div>
     </form>
-</body>
-
+    </h2>
+  </body>
 </html>

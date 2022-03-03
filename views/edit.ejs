@@ -5,29 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
     
 </head>
 <body>
-    <h1>Edit Data</h1>
-    <form action="" method="post">
-        <label for="id">ID</label>
-        <input type="text" id="id" name="id">
-        <label for="string">String</label>
-        <input type="text" id="string" name="string" value= "<%= data.string %>">
-        <label for="integer">Integer</label>
-        <input type="number" id="integer" name="integer" value= "<%= data.integer %>">
-        <label for="float">Float</label>
-        <input type="number" step="0.001" id="float" name="float" value= "<%= data.float %>">
-        <label for="date">Date</label>
-        <input type="date" id="date" name="date" value= "<%= data.date %>">
-        <label for="boolean">Boolean</label>
-        <select name="boolean" id="">
-            <option value="false">false</option>
-            <option value="true" <%= data.boolean ? 'selected' : '' %>>true</option>
-        </select>
+    <h2>Edit Data
+    <form action="" method="post" class="form">
+    <div>
+        <div>
+            <label for="id">ID</label>
+            <div>
+                <input type="text" id="id" name="id">
+            </div>
+        </div>
+
+        <div>
+            <label for="string">String</label>
+            <div>
+                <input type="text" id="string" name="string" value= "<%= data.string %>">
+            </div>
+        </div>
+
+        <div>
+            <label for="integer">Integer</label>
+            <div>
+                <input type="number" id="integer" name="integer" value= "<%= data.integer %>">
+            </div>
+        </div>
+
+        <div>
+            <label for="float">Float</label>
+            <div>
+                <input type="number" step="0.001" id="float" name="float" value= "<%= data.float %>">
+            </div>
+        </div>
+
+        <div>
+            <label for="date">Date</label>
+            <div>
+                <input type="date" id="date" name="date" value= "<%= data.date %>">
+            </div>
+        </div>
+
+        <div>
+            <label for="boolean">Boolean</label>
+            <div>
+                <select name="boolean" id="">
+                    <option value="false">false</option>
+                    <option value="true" <%= data.boolean ? 'selected' : '' %>>true</option>
+                </select>
+            </div>
+        </div>
         <button type="submit">Update</button>
+    </div>
     </form>
+    </h2>
 </body>
 </html>

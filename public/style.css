@@ -2,20 +2,25 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .content-table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   border: 1px solid #ddd;
+  
 }
 
 .content-table th,
 .content-table td {
   text-align: left;
   padding: 16px;
+  width: 10%;
+  
 }
 
-.content-table tr:nth-child(even) {
+.content-table tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
 
@@ -25,5 +30,43 @@
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
+
+.form {
+  margin: auto;
+  border: 2px;
+
+}
+
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* input[type=submit]:hover {
+  background-color: #45a049;
+} */
+
+/* div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} */

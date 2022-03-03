@@ -1,10 +1,10 @@
 [
    {
       "string": "Testing Data",
-      "integer": "12",
+      "integer": "15",
       "float": "1.45",
-      "date": "2017-12-12",
-      "boolean": true
+      "date": "2017-11-29",
+      "boolean": false
    },
    {
       "string": "Coba Lagi",
@@ -35,10 +35,24 @@
       "boolean": true
    },
    {
-      "string": "Data Lagi lagi",
+      "string": "Data Lagi la",
       "integer": "111",
       "float": "11.889",
       "date": "2022-02-01",
+      "boolean": true
+   },
+   {
+      "string": "wwwshhdd",
+      "integer": "1122",
+      "float": "221.973",
+      "date": "2022-02-16",
+      "boolean": false
+   },
+   {
+      "string": "ssd",
+      "integer": "666",
+      "float": "555.789",
+      "date": "2022-02-22",
       "boolean": true
    }
 ]
